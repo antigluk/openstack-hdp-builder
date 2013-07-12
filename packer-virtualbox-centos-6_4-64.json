@@ -18,9 +18,9 @@
             "type": "virtualbox",
             "vboxmanage": [
                 ["modifyvm", "{{.Name}}", "--memory", "1024"],
-                ["modifyvm", "{{.Name}}", "--cpus", "2"]
+                ["modifyvm", "{{.Name}}", "--cpus", "1"]
             ],
-            "vm_name": "packer-centos-6_4-64"
+            "vm_name": "packer-centos-6_4-64-hdp"
         }
     ],
     "provisioners": [
@@ -31,10 +31,10 @@
         {
             "type": "shell",
             "script": "provisioners/hdp-provision.sh"
-        }
+        },
         {
             "type": "shell",
             "script": "provisioners/clean-empty-space.sh"
-        },
+        }
     ]
 }
