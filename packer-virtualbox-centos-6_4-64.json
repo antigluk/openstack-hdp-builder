@@ -30,7 +30,11 @@
         },
         {
             "type": "shell",
-            "script": "provisioners/clean-empty-space.sh"
+            "script": "provisioners/hdp-provision.sh"
         }
+        {
+            "type": "shell",
+            "script": "provisioners/clean-empty-space.sh"
+        },
     ]
 }
