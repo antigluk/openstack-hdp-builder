@@ -10,5 +10,7 @@ yum clean all
 rm -rf /var/cache/* /usr/share/doc/*
 
 # Clean up unused disk space so compressed image is smaller.
+#     FIXME: uncomment.
+#     Commented for development purposes to make building faster
 #cat /dev/zero > /tmp/zero.fill
 #rm /tmp/zero.fill

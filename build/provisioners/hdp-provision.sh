@@ -14,3 +14,6 @@ rpm -Uvh epel-release-6*.rpm
 
 # ====== cloud tools ======
 yum install -y cloud-init
+
+# ===== NETWORKING =====
+rm -f /etc/udev/rules.d/70-persistent-net.rules

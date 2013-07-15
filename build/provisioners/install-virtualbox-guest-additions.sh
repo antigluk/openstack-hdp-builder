@@ -11,7 +11,3 @@
 # Cleanup
 #umount isomount
 rm -rf isomount /root/VBoxGuestAdditions.iso
-
-
-# ===== NETWORKING =====
-rm -f /etc/udev/rules.d/70-persistent-net.rules
