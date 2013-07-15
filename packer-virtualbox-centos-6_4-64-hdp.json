@@ -16,8 +16,9 @@
             "ssh_username": "root",
             "ssh_wait_timeout": "30m",
             "type": "virtualbox",
+            "shutdown_command": "shutdown -P now",
             "vboxmanage": [
-                ["modifyvm", "{{.Name}}", "--memory", "1024"],
+                ["modifyvm", "{{.Name}}", "--memory", "512"],
                 ["modifyvm", "{{.Name}}", "--cpus", "1"]
             ],
             "vm_name": "packer-centos-6_4-64-hdp"
