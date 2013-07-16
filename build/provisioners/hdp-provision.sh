@@ -14,6 +14,8 @@ rpm -Uvh epel-release-6*.rpm
 
 # ====== cloud tools ======
 yum install -y cloud-init
+sed -i.bak "s/disable_root\:.*$/disable_root\: 0/g" /etc/cloud/cloud.cfg
+
 
 # ===== NETWORKING =====
 rm -f /etc/udev/rules.d/70-persistent-net.rules

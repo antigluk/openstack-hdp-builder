@@ -1,0 +1,13 @@
+#cloud-config
+
+user: stack
+
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCbZiEGnwPunccncBHf4ILeSHwa0bW/yMHh6J0qvvnybgxT/zWOdwiv/8XHFI/QwW/BNSbsVC64HwBLDKz3t+mlvpcLsbRSyZ9Y3V8ELzLZ45MaG7UQsWE+T8BhOAjU6a5WXD18cKOPfrIBfP3wQHadPSq1/ZBoBncCjNCipGb0N+DG4qjNFCzFAQUvTiA/6Scd2tTsiUdSsxKdjkN/MpRX/FkoPkbK9HkyxuawH9VKNiBo7wSb/PV38rCRt+6DsbVv2RBmcsuqB1Ko4GPHWr73EljsPO3KP0pT4HPkLKsB1y3DNv2IYrMtT2y13QP/rnOVhUYwvIZDoFi7UIw9KEyZ roma@manjaro
+
+chpasswd:
+ list: |
+   root:toor
+   stack:openstack
+ expire: False
+ssh_pwauth: False
