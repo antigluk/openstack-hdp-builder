@@ -1,3 +1,6 @@
 *.box
 build/output-*/*
 build/packer_cache/*
+
+build/http_directory
+build/provisioners/hdp-provision.sh
